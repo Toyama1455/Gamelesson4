@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 52770372}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickPark
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &52770372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,7 +676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 154171132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickHorseRase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &154171132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,7 +967,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 275774746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickHeveycrime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &275774746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1301,7 +1337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 495631765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickAquarium
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &495631765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1505,7 +1553,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 531218651}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickPettycrime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &531218651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,7 +1652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1810,7 +1870,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 584094354}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickBicyleRace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &584094354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,7 +2079,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 752782364}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickLottery
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &752782364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2046,6 +2130,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752782361}
   m_CullTransparentMesh: 1
+--- !u!1 &804248269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804248271}
+  - component: {fileID: 804248270}
+  m_Layer: 0
+  m_Name: SceneManeger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &804248270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804248269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385e50816f49e3a4ba07bcd280aa0590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &804248271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804248269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.0261865, y: 0.5838788, z: -83.51813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &812732090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,7 +2335,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 840695203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickShopping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &840695203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2914,7 +3053,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1058610836}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickBortRace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1058610836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3193,7 +3344,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1207884534}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickPachinkoAndSlot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1207884534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3617,7 +3780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 196a85c730d3aaa419bee6c0c380b80d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28aa807a5f59f494bae315749f83de49, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4688,7 +4851,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1572511016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickWork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1572511016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4888,7 +5063,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1717041839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickSleep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1717041839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5592,7 +5779,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2005808466}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickMidiumcrime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2005808466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5871,7 +6070,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2064511462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 804248270}
+        m_TargetAssemblyTypeName: SceneScript, Assembly-CSharp
+        m_MethodName: OnClickEat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2064511462
 MonoBehaviour:
   m_ObjectHideFlags: 0
