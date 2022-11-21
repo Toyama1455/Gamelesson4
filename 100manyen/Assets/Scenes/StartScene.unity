@@ -446,10 +446,10 @@ RectTransform:
   m_Father: {fileID: 217856703}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 50, y: -8.134613}
-  m_SizeDelta: {x: 656.2542, y: -16.269}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604884578
 MonoBehaviour:
@@ -485,7 +485,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u606F\u5B50\u3078\n\n\u501F\u91D1\u304C\uFF11\uFF10\uFF10\u4E07\u5186\u3042\u308B\u3093\u3060\u3051\u3069\n\u8FD4\u305B\u305D\u3046\u306B\u306A\u3044\u304B\u3089\u306B\u3052\u3061\u3083\u3063\u305F\uFF01\n\uFF11\u30F6\u6708\u5F8C\u306B\u53D6\u308A\u7ACB\u3066\u306B\u304F\u308B\u304B\u3089\n\u305D\u308C\u307E\u3067\u306B\u304A\u91D1\u4F5C\u3063\u3066\u6255\u3063\u3068\u3044\u3066\uFF01\n\u591C\u9732\u6B7B\u82E6\uFF01(
-    \uFF40\u30FB\u2200\u30FB\xB4)\uFF89\n\u3061\u306A\u307F\u306B\u3001\u8FD4\u305B\u306A\u3044\u3068....\n\u306A\u3093\u3068\uFF01\u58F2\u308C\u308B\u4F53\u306E\u90E8\u4F4D\u3001\u3059\u3079\u3066\n\u304F\u308A\u629C\u304B\u308C\u3066\u3001\u58F2\u3089\u308C\u308B\u304B\u3089\uFF01\n\u6B8B\u3063\u305F\u90E8\u5206\u306F\u3001\u30C9\u30E9\u30E0\u7F36\u306B\u30B3\u30F3\u30AF\u30EA\u30FC\u30C8\u3068\n\u4E00\u7DD2\u306B\u3044\u308C\u3089\u308C\u3066\u3001\u6D77\u306B\u6368\u3066\u3089\u308C\u308B\u3089\u3057\u3044\u308F\uFF01\n\u6B7B\u306B\u305F\u304F\u306A\u3044\u306A\u3089\u30D5\u30A1\u30A4\u30C8\uFF01\u30D5\u30A1\u30A4\u30C8\uFF01\n\n\u7121\u8CAC\u4EFB\u306A\u4E21\u89AA\u3088\u308A..."
+    \uFF40\u30FB\u2200\u30FB\xB4)\uFF89\n\u3061\u306A\u307F\u306B\u3001\u8FD4\u305B\u306A\u3044\u3068....\n\u306A\u3093\u3068\uFF01\u58F2\u308C\u308B\u4F53\u306E\u90E8\u4F4D\u3001\u3059\u3079\u3066\n\u304F\u308A\u629C\u304B\u308C\u3066\u3001\u58F2\u3089\u308C\u308B\u304B\u3089\uFF01\n\u6B8B\u3063\u305F\u90E8\u5206\u306F\u3001\u30C9\u30E9\u30E0\u7F36\u306B\u30B3\u30F3\u30AF\u30EA\u30FC\u30C8\u98A8\u5442\n\u306B\u3044\u308C\u3089\u308C\u3066\u3001\u6D77\u306B\u6368\u3066\u3089\u308C\u308B\u3089\u3057\u3044\u308F\uFF01\n\u6B7B\u306B\u305F\u304F\u306A\u3044\u306A\u3089\u30D5\u30A1\u30A4\u30C8\uFF01\u30D5\u30A1\u30A4\u30C8\uFF01\n\n\u7121\u8CAC\u4EFB\u306A\u4E21\u89AA\u3088\u308A..."
 --- !u!222 &604884579
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -562,8 +562,8 @@ Canvas:
   m_GameObject: {fileID: 624285841}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -904,6 +904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e50816f49e3a4ba07bcd280aa0590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerState: {fileID: 0}
 --- !u!4 &1132153910
 Transform:
   m_ObjectHideFlags: 0
