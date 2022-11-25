@@ -5,68 +5,23 @@ using UnityEngine;
 public class PlayerState : MonoBehaviour
 {
     //値の管理
-    [SerializeField]
-    public int Physical //体力
-    { 
-        get
-        {
-            return Physical;
-        }
-        set
-        {
-            Physical = value;
-        }
-    }
+    [field: SerializeField]
+    public static int Physical { get; set; }//体力
 
-    [SerializeField]
-    public int Mind //精神力
-    {
-        get
-        {
-            return Mind;
-        }
-        set
-        {
-            Mind = value;
-        }
-    }
+    [field: SerializeField]
+    public static int Mind { get; set; }//精神力
 
-    [SerializeField]
-    public int Addiction //中毒値
-    {
-        get
-        {
-            return Addiction;
-        }
-        set
-        {
-            Addiction = value;
-        }
-    }
-    [SerializeField]
-    public int Ethic //倫理値
-    {
-        get
-        {
-            return Ethic;
-        }
-        set
-        {
-            Ethic = value;
-        }
-    }
-    [SerializeField]
-    public int Money //お金
-    {
-        get
-        {
-            return Money;
-        }
-        set
-        {
-            Money = value;
-        }
-    }
+    [field: SerializeField]
+    public static int Addiction { get; set; }//中毒値
+
+    [field: SerializeField]
+    public static int Ethic { get; set; }//倫理値
+
+    [field: SerializeField]
+    public static int Money { get; set; }//お金
+
+    [field: SerializeField]
+    public static int EndingNum { get; set; }//エンディングシーンに必要なもの
 
 
     // Start is called before the first frame update
