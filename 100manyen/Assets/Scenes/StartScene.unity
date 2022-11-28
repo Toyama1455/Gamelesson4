@@ -904,7 +904,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e50816f49e3a4ba07bcd280aa0590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerState: {fileID: 0}
+  physical: 100
+  mind: 100
+  addiction: 0
+  ethic: 50
+  money: 10000
 --- !u!4 &1132153910
 Transform:
   m_ObjectHideFlags: 0

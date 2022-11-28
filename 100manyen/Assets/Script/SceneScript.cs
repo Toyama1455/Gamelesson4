@@ -26,13 +26,18 @@ public enum ActionBackgroundState
 public class SceneScript : MonoBehaviour
 {
     public static ActionBackgroundState Action { get; private set; }
-
     
+    public int physical;//体力
+    public int mind;//精神力
+    public int addiction;//中毒値
+    public int ethic;//倫理値
+    public int money;//お金
+
 
     //リザルト画面でエンディング処理ができるかどうかを行う
     void Start()
     {
-        if (MainBackgroundManeger.day > 30)
+        if (PlayerState.day > 30)
         {
             //１００万円以上もっている
             if (PlayerState.Money > 1000000)
@@ -77,7 +82,6 @@ public class SceneScript : MonoBehaviour
                         return;
                     }
                 }
-
                 //エンディング３の判定
                 if (PlayerState.Addiction >= 75)
                 {
@@ -87,11 +91,8 @@ public class SceneScript : MonoBehaviour
                 //エンディング２
                 PlayerState.EndingNum = 2;
                 return;
-            }
-            
+            }   
         }
-
-
         //体力が０になったら
         if (PlayerState.Physical < 0)
         {
@@ -118,10 +119,22 @@ public class SceneScript : MonoBehaviour
         
     }
 
+    public void StateInit()//初期値の設定
+    {
+        PlayerState.Physical = physical;
+        PlayerState.Mind = mind;
+        PlayerState.Addiction = addiction;
+        PlayerState.Ethic = ethic;
+        PlayerState.Money = money;
+
+    }
+
     //タイトル画面からメイン画面へ
     public void OnClickStart()
     {
+        StateInit();
         SceneManager.LoadScene("MainScene");
+        
     }
 
     //タイトル画面からデスクトップへ
@@ -134,68 +147,78 @@ public class SceneScript : MonoBehaviour
     //リザルト画面からメインシーンに戻る処理
     public void OnClickNext()
     {
+        Debug.Log("エンディングナンバーは"+PlayerState.EndingNum);
+
         if (PlayerState.EndingNum　> 0 )
         {
             switch (PlayerState.EndingNum)
             {
                 //ED1 借金返済
                 case 1:
+                    Debug.Log("これからの平穏な日々");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED2 借金返済出来ず内臓売り捌かれて海の藻屑
                 case 2:
+                    Debug.Log("海の藻屑");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED3 ギャンブラー、強制労働堕ち
                 case 3:
+                    Debug.Log("ギャンブル狂いの債務者は強制労働じゃぁぁあああ");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED4 ギャンブラー
                 case 4:
+                    Debug.Log("一生これで食っていく");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED5 牢獄入所
                 case 5:
+                    Debug.Log("監獄生活のはじまり");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED6 大泥棒
                 case 6:
+                    Debug.Log("俺が令和の大泥棒だぜ");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED7 死亡
                 case 7:
+                    Debug.Log("体力がなくなりました");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED8 病み落ち自殺
                 case 8:
+                    Debug.Log("現実に耐え切れず自殺しました");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED9 エンドレス借金
                 case 9:
+                    Debug.Log("返しても返しても増える借金");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED10 人間のクズ
                 case 10:
+                    Debug.Log("お前、マジで人間のクズだな");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //ED11　人生終わり組
                 case 11:
+                    Debug.Log("人として終わってんな");
+                    SceneManager.LoadScene("EndScene");
                     break;
                 //バグ
                 default:
                     Debug.Log("バグっています");
-
                     break;
 
-
-
-
-
-
             }
-
-
-
-
         }
-
-
-
-
-
-
-
-        SceneManager.LoadScene("MainScene");
+        else
+        {
+            SceneManager.LoadScene("MainScene");
+        }
     }
     
     //メイン画面から各選択肢へ
@@ -205,13 +228,21 @@ public class SceneScript : MonoBehaviour
         Action = ActionBackgroundState.Work;
         //ステータス変更
 
-        PlayerState.Physical += 1; //体力の変更
+        PlayerState.Physical -= 10; //体力の変更
 
-        PlayerState.Mind += 1; //精神力の変更
+        PlayerState.Mind -= 10; //精神力の変更
 
-        PlayerState.Money += 1;//お金の変更
+        int rnd = Random.Range(1, 101);
 
-        Debug.Log("働きました");
+        int WorkMoney = rnd * 1000;
+
+        PlayerState.Money += WorkMoney;
+
+
+
+
+
+        Debug.Log(WorkMoney + "稼ぎました");
 
         SceneManager.LoadScene("ResultScene");
     }
@@ -220,11 +251,11 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Eat;
 
-        PlayerState.Physical += 1; //体力の変更
+        PlayerState.Physical += 30; //体力の変更
 
-        PlayerState.Mind += 1; //精神力の変更
+        PlayerState.Mind += 15; //精神力の変更
 
-        PlayerState.Money += 1;//お金の変更
+        PlayerState.Money -= 1500;//お金の変更
 
         Debug.Log("食べました");
 
@@ -235,12 +266,10 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Sleep;
 
-        PlayerState.Physical += 1; //体力の変更
+        PlayerState.Physical -= 10; //体力の変更
 
-        PlayerState.Mind += 1; //精神力の変更
-
-        PlayerState.Money += 1;//お金の変更
-
+        PlayerState.Mind += 30; //精神力の変更
+        
         Debug.Log("寝ました");
 
         SceneManager.LoadScene("ResultScene");
@@ -250,9 +279,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Park;
 
-        PlayerState.Physical -= 1;
+        PlayerState.Physical -= 10;
 
-        PlayerState.Mind += 1;
+        PlayerState.Mind += 30;
 
         Debug.Log("公園に行きました");
 
@@ -263,9 +292,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Aquarium;
 
-        PlayerState.Money -= 1;
+        PlayerState.Mind += 50;
 
-        PlayerState.Money += 1;
+        PlayerState.Money -= 10000;
 
         Debug.Log("水族館に行きました");
 
@@ -276,9 +305,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Shopping;
 
-        PlayerState.Money -= 1;
+        PlayerState.Money -= 30000;
 
-        PlayerState.Mind += 1;
+        PlayerState.Mind += 100;
 
         Debug.Log("買い物に行きました");
 
@@ -461,7 +490,7 @@ public class SceneScript : MonoBehaviour
         {
             case 1://勝ち
 
-                PlayerState.Addiction += 10;
+                PlayerState.Addiction += 100;
                 PlayerState.Money += 100000000;
                 break;
 
@@ -471,15 +500,15 @@ public class SceneScript : MonoBehaviour
                 break;
 
             case 3://負け
-                PlayerState.Addiction += 3;
+                PlayerState.Addiction += 10;
                 PlayerState.Money -= 100000;
                 break;
             case 4://大負け
-                PlayerState.Addiction += 2;
+                PlayerState.Addiction += 20;
                 PlayerState.Money -= 500000;
                 break;
             case 5://超大負け
-                PlayerState.Addiction += 1;
+                PlayerState.Addiction += 30;
                 PlayerState.Money -= 1000000;
                 break;
                 
@@ -514,11 +543,15 @@ public class SceneScript : MonoBehaviour
 
                 PlayerState.Ethic -= 3;
 
+                SceneManager.LoadScene("ResultScene");
+
                 break;
 
             case 3://失敗
 
                 PlayerState.EndingNum = 5;
+
+                SceneManager.LoadScene("ResultScene");
 
                 break;
 
@@ -561,11 +594,15 @@ public class SceneScript : MonoBehaviour
 
                 PlayerState.EndingNum = 5;
 
+                SceneManager.LoadScene("ResultScene");
+
                 break;
 
             case 5://失敗
 
                 PlayerState.EndingNum = 5;
+
+                SceneManager.LoadScene("ResultScene");
 
                 break;
 
@@ -610,6 +647,8 @@ public class SceneScript : MonoBehaviour
 
                 Debug.Log("失敗しました");
 
+                SceneManager.LoadScene("ResultScene");
+
                 break;
 
             case 4://失敗
@@ -617,6 +656,9 @@ public class SceneScript : MonoBehaviour
                 PlayerState.EndingNum = 5;
 
                 Debug.Log("失敗しました２");
+                Debug.Log(PlayerState.EndingNum);
+
+                SceneManager.LoadScene("ResultScene");
 
                 break;
 
@@ -625,6 +667,9 @@ public class SceneScript : MonoBehaviour
                 PlayerState.EndingNum = 5;
 
                 Debug.Log("失敗しました３");
+                Debug.Log(PlayerState.EndingNum);
+
+                SceneManager.LoadScene("ResultScene");
 
                 break;
                 

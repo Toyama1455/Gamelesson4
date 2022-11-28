@@ -13,11 +13,7 @@ public class MainBackgroundManeger : MonoBehaviour
     Image NoonBackground;
     [SerializeField]
     Image NightBackground;
-    [field: SerializeField]
-    public static int day { get; set; }
     
-    [field: SerializeField]
-    public static int time { get; set; }
     
     
 
@@ -35,7 +31,7 @@ public class MainBackgroundManeger : MonoBehaviour
 
     public void MainBackgroundpup()
     {
-        switch (time)
+        switch (PlayerState.time)
         {
             case 0:
                 MornigBackground.gameObject.SetActive(true);
@@ -52,13 +48,17 @@ public class MainBackgroundManeger : MonoBehaviour
                 
         }
 
-        if (time == 2)
+        if (PlayerState.time == 2)
         {
-            time = 0;
-            day =+ 1;
+            PlayerState.time = 0;
+            PlayerState.day += 1;
+        }
+        else
+        {
+            PlayerState.time += 1;
         }
 
-        time += 1;
+        
         
     }
 }
