@@ -232,17 +232,16 @@ public class SceneScript : MonoBehaviour
 
         PlayerState.Mind -= 10; //精神力の変更
 
-        int rnd = Random.Range(1, 101);
+        int rnd = Random.Range(1, 51);
 
-        int WorkMoney = rnd * 1000;
+        
 
-        PlayerState.Money += WorkMoney;
+        PlayerState.WorkMoney = rnd * 1000;
 
+        PlayerState.Money += PlayerState.WorkMoney;
 
-
-
-
-        Debug.Log(WorkMoney + "稼ぎました");
+        
+        Debug.Log(PlayerState.WorkMoney + "稼ぎました");
 
         SceneManager.LoadScene("ResultScene");
     }
@@ -251,14 +250,33 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Eat;
 
-        PlayerState.Physical += 30; //体力の変更
+        PlayerState.Luck = Random.Range(1, 4);
 
-        PlayerState.Mind += 15; //精神力の変更
+        switch (PlayerState.Luck)
+        {
+            case 1:
+                PlayerState.Physical += 50; //体力の変更
+                PlayerState.Mind += 50; //精神力の変更
+                PlayerState.Money -= 15000;//お金の変更
+                Debug.Log("高級な食事をしました。");
+                break;
 
-        PlayerState.Money -= 1500;//お金の変更
-
-        Debug.Log("食べました");
-
+            case 2:
+                PlayerState.Physical += 30; //体力の変更
+                PlayerState.Mind += 20; //精神力の変更
+                PlayerState.Money -= 3000;//お金の変更
+                Debug.Log("普通の食事をしました。");
+                break;
+            case 3:
+                PlayerState.Physical += 15; //体力の変更
+                PlayerState.Mind += 10; //精神力の変更
+                PlayerState.Money -= 1000;//お金の変更
+                Debug.Log("節約的な食事をしました。");
+                break;                
+            default:
+                Debug.Log("バグっています。早急に直してください");
+                break;
+        }
         SceneManager.LoadScene("ResultScene");
     }
 
@@ -266,11 +284,29 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Sleep;
 
-        PlayerState.Physical -= 10; //体力の変更
+        PlayerState.Luck = Random.Range(1, 4);
 
-        PlayerState.Mind += 30; //精神力の変更
-        
-        Debug.Log("寝ました");
+        switch (PlayerState.Luck)
+        {
+            case 1:
+                PlayerState.Physical += 20; //体力の変更
+                PlayerState.Mind += 30; //精神力の変更
+                Debug.Log("熟睡できました。");
+                break;
+            case 2:
+                PlayerState.Physical += 10; //体力の変更
+                PlayerState.Mind += 15; //精神力の変更                
+                Debug.Log("普通に眠れました");
+                break;
+            case 3:
+                PlayerState.Physical += 5; //体力の変更
+                PlayerState.Mind += 10; //精神力の変更
+                Debug.Log("あまり眠れませんでした");
+                break;
+            default:
+                Debug.Log("バグっています。早急に直してください");
+                break;
+        }
 
         SceneManager.LoadScene("ResultScene");
     }
@@ -279,12 +315,29 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Park;
 
-        PlayerState.Physical -= 10;
+        PlayerState.Luck = Random.Range(1, 4);
 
-        PlayerState.Mind += 30;
-
-        Debug.Log("公園に行きました");
-
+        switch (PlayerState.Luck)
+        {
+            case 1:
+                PlayerState.Physical -= 15; //体力の変更
+                PlayerState.Mind += 30; //精神力の変更
+                Debug.Log("遠くの綺麗な公園にいきました");
+                break;
+            case 2:
+                PlayerState.Physical -= 10; //体力の変更
+                PlayerState.Mind += 20; //精神力の変更                
+                Debug.Log("近場の綺麗な公園にいきました");
+                break;
+            case 3:
+                PlayerState.Physical -= 5; //体力の変更
+                PlayerState.Mind += 10; //精神力の変更
+                Debug.Log("そのへんを散歩しました");
+                break;
+            default:
+                Debug.Log("バグっています。早急に直してください");
+                break;
+        }
         SceneManager.LoadScene("ResultScene");
     }
 
@@ -292,12 +345,29 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Aquarium;
 
-        PlayerState.Mind += 50;
+        PlayerState.Luck = Random.Range(1, 4);
 
-        PlayerState.Money -= 10000;
-
-        Debug.Log("水族館に行きました");
-
+        switch (PlayerState.Luck)
+        {
+            case 1:
+                PlayerState.Money -= 15000; //所持金から減らす
+                PlayerState.Mind += 50; //精神力の変更
+                Debug.Log("遠くの超有名水族館に行きました");
+                break;
+            case 2:
+                PlayerState.Money -= 10000; //所持金から減らす
+                PlayerState.Mind += 30; //精神力の変更
+                Debug.Log("近場の有名水族館に行きました");
+                break;
+            case 3:
+                PlayerState.Money -= 5000; //所持金から減らす
+                PlayerState.Mind += 15; //精神力の変更
+                Debug.Log("なんとなく水族館に行きました");
+                break;
+            default:
+                Debug.Log("バグっています。早急に直してください");
+                break;
+        }
         SceneManager.LoadScene("ResultScene");
     }
 
@@ -305,12 +375,30 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Shopping;
 
-        PlayerState.Money -= 30000;
+        PlayerState.Luck = Random.Range(1, 4);
 
-        PlayerState.Mind += 100;
-
-        Debug.Log("買い物に行きました");
-
+        switch (PlayerState.Luck)
+        {
+            case 1:
+                PlayerState.Money -= 50000; //所持金から減らす
+                PlayerState.Ethic += 50; //倫理値の変更
+                Debug.Log("超爆買いしました");
+                break;
+            case 2:
+                PlayerState.Money -= 30000; //所持金から減らす
+                PlayerState.Ethic += 30; //倫理値の変更
+                Debug.Log("爆買いしました");
+                break;
+            case 3:
+                PlayerState.Money -= 10000; //所持金から減らす
+                PlayerState.Ethic += 15; //倫理値の変更
+                Debug.Log("買い物をしました");
+                break;
+            default:
+                Debug.Log("バグっています。早急に直してください");
+                break;
+        }
+        
         SceneManager.LoadScene("ResultScene");
     }
 
@@ -318,11 +406,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.PachinkoAndSlot;
 
+        PlayerState.Luck = Random.Range(1, 6);
 
-
-        int rnd = Random.Range(1, 6);
-
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://大勝
 
@@ -372,9 +458,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Bortrace;
 
-        int rnd = Random.Range(1, 6);
+        PlayerState.Luck = Random.Range(1, 6);
 
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://大勝
 
@@ -409,9 +495,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Bicyclerace;
 
-        int rnd = Random.Range(1, 6);
+        PlayerState.Luck = Random.Range(1, 6);
 
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://大勝
 
@@ -445,9 +531,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Horserace;
 
-        int rnd = Random.Range(1, 6);
+        PlayerState.Luck = Random.Range(1, 6);
 
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://大勝
 
@@ -484,9 +570,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Lottery;
 
-        int rnd = Random.Range(1, 6);
+        PlayerState.Luck = Random.Range(1, 6);
 
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://勝ち
 
@@ -523,9 +609,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Pettycrime;
 
-        int rnd = Random.Range(1, 4);
+        PlayerState.Luck = Random.Range(1, 4);
 
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://成功
 
@@ -563,9 +649,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Midiumcrime;
 
-        int rnd = Random.Range(1, 6);
+        PlayerState.Luck = Random.Range(1, 6);
 
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://成功
 
@@ -616,9 +702,9 @@ public class SceneScript : MonoBehaviour
     {
         Action = ActionBackgroundState.Heveycrime;//倫理値を大きく下げて、お金を大きく得る
 
-        int rnd = Random.Range(1, 6);
+        PlayerState.Luck = Random.Range(1, 6);
 
-        switch (rnd)
+        switch (PlayerState.Luck)
         {
             case 1://成功
 

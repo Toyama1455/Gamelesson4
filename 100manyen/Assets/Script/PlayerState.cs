@@ -28,6 +28,13 @@ public class PlayerState : MonoBehaviour
     [field: SerializeField]
     public static int time { get; set; }//ŽžŠÔ
 
+    [field: SerializeField]
+    public static int WorkMoney { get; set; }//ŽžŠÔ
+
+    [field: SerializeField]
+    public static int Luck { get; set; }//ŽžŠÔ
+
+
 
     // Start is called before the first frame update
     void Start()

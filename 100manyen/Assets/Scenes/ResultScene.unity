@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 114280764}
   - component: {fileID: 114280763}
   m_Layer: 5
-  m_Name: Text
+  m_Name: LotteryText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263075713
@@ -824,13 +824,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306050126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1658705020}
-  m_Father: {fileID: 1909371385}
-  m_RootOrder: 0
+  m_Father: {fileID: 1791101219}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 344543294}
   - component: {fileID: 344543293}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ShoppingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -966,7 +966,7 @@ GameObject:
   - component: {fileID: 366246128}
   - component: {fileID: 366246127}
   m_Layer: 5
-  m_Name: Text
+  m_Name: HevycrimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1192,6 +1192,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530055636}
   m_CullTransparentMesh: 1
+--- !u!1 &630456200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 630456201}
+  - component: {fileID: 630456202}
+  m_Layer: 0
+  m_Name: DialogueManeger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630456201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630456200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.045803, y: 0.097461924, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630456202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630456200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47cf0f39e4c6fab449929c9a14025f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Messege: {fileID: 1658705021}
 --- !u!1 &666105729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1248,7 @@ GameObject:
   - component: {fileID: 666105732}
   - component: {fileID: 666105731}
   m_Layer: 5
-  m_Name: Text
+  m_Name: EatText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,7 +1403,7 @@ GameObject:
   - component: {fileID: 672834308}
   - component: {fileID: 672834307}
   m_Layer: 5
-  m_Name: Text
+  m_Name: SleepText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1438,7 +1482,7 @@ GameObject:
   - component: {fileID: 761811534}
   - component: {fileID: 761811533}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PachinAndSlotText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1803,7 +1847,7 @@ GameObject:
   - component: {fileID: 1061928228}
   - component: {fileID: 1061928227}
   m_Layer: 5
-  m_Name: Text
+  m_Name: BicycleraceText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2186,7 +2230,7 @@ GameObject:
   - component: {fileID: 1297718865}
   - component: {fileID: 1297718864}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ParkText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2493,7 +2537,7 @@ GameObject:
   - component: {fileID: 1356901997}
   - component: {fileID: 1356901996}
   m_Layer: 5
-  m_Name: Text
+  m_Name: AquariumText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2572,7 +2616,7 @@ GameObject:
   - component: {fileID: 1400180239}
   - component: {fileID: 1400180238}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PettycrimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2727,7 +2771,7 @@ GameObject:
   - component: {fileID: 1411223609}
   - component: {fileID: 1411223608}
   m_Layer: 5
-  m_Name: Text
+  m_Name: BortraceText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2958,7 +3002,7 @@ GameObject:
   - component: {fileID: 1658705022}
   - component: {fileID: 1658705021}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WorkText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3207,6 +3251,7 @@ RectTransform:
   - {fileID: 2067998731}
   - {fileID: 2027359308}
   - {fileID: 530055637}
+  - {fileID: 306050127}
   - {fileID: 2114351194}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -3320,8 +3365,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 306050127}
+  m_Children: []
   m_Father: {fileID: 1791101219}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3532,7 +3576,7 @@ GameObject:
   - component: {fileID: 2032739762}
   - component: {fileID: 2032739761}
   m_Layer: 5
-  m_Name: Text
+  m_Name: HorseraceText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3628,6 +3672,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e50816f49e3a4ba07bcd280aa0590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  physical: 0
+  mind: 0
+  addiction: 0
+  ethic: 0
+  money: 0
 --- !u!4 &2041952603
 Transform:
   m_ObjectHideFlags: 0
@@ -3730,7 +3779,7 @@ GameObject:
   - component: {fileID: 2081406435}
   - component: {fileID: 2081406434}
   m_Layer: 5
-  m_Name: Text
+  m_Name: MediumcrimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3828,7 +3877,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1791101219}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

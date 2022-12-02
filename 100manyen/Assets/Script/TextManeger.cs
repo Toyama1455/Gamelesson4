@@ -12,7 +12,7 @@ public class TextManeger : MonoBehaviour
     public Text Ethic = null;//倫理値テキストオブジェクト
     public Text Money = null;//お金テキストオブジェクト
 
-    public Text Work = null;//働いた時のテキスト
+   
 
 
 
@@ -94,10 +94,6 @@ public class TextManeger : MonoBehaviour
         Money.text = ("所持金　" + PlayerState.Money.ToString() + "円");
     }
 
-    public void WorkMessege()
-    {
-        Work.text = ("");
-    }
 
 
 
