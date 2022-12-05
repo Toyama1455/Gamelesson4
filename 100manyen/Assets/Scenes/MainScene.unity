@@ -158,7 +158,6 @@ MonoBehaviour:
   Addiction: {fileID: 1304919549}
   Ethic: {fileID: 1031375040}
   Money: {fileID: 574166696}
-  Work: {fileID: 0}
 --- !u!4 &19883304
 Transform:
   m_ObjectHideFlags: 0
@@ -1894,7 +1893,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

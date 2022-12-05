@@ -220,6 +220,11 @@ public class SceneScript : MonoBehaviour
             SceneManager.LoadScene("MainScene");
         }
     }
+
+    public void OnClickEnding()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
     
     //メイン画面から各選択肢へ
     public void OnClickWork() //体力と精神力を消費してお金を増やす

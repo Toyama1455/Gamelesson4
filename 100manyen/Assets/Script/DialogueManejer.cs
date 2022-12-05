@@ -142,7 +142,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("‚‹‰‚ÈH–‚ğ‚µ‚Ü‚µ‚½B");
                 */
                 Messege.text = ("¡“ú‚Í•±”­‚µ‚Ä‚‹‰‚ÈH–‚ğ‚µ‚Ü‚µ‚½" + 
-                    "\n ‚Æ‚Ä‚à‚¨‚¢‚µ‚©‚Á‚½‚Å‚·B@‘Ì—Í{‚T‚O@¸_—Í{‚T‚O@‹à@[‚P‚T‚O‚O‚O‰~");
+                    "\n ‚Æ‚Ä‚à‚¨‚¢‚µ‚©‚Á‚½‚Å‚·B@‘Ì—Í{‚T‚O@¸_—Í{‚T‚O@‹à[‚P‚T‚O‚O‚O‰~");
 
                 break;
 
@@ -154,7 +154,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("•’Ê‚ÌH–‚ğ‚µ‚Ü‚µ‚½B");
                 */                
                 Messege.text = ("¡“ú‚Í•’Ê‚ÉH–‚ğ‚µ‚Ü‚µ‚½" +
-                    "\n ‚¨‚¢‚µ‚©‚Á‚½‚Å‚·B@‘Ì—Í{‚R‚O@¸_—Í{‚Q‚O@‹à@[‚P‚O‚O‚O‚O‰~");
+                    "\n ‚¨‚¢‚µ‚©‚Á‚½‚Å‚·B@‘Ì—Í{‚R‚O@¸_—Í{‚Q‚O@‹à[‚P‚O‚O‚O‚O‰~");
                 
                 break;
             case 3:
@@ -165,7 +165,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("ß–ñ“I‚ÈH–‚ğ‚µ‚Ü‚µ‚½B");
                 */
                 Messege.text = ("¡“ú‚Í•’Ê‚ÉH–‚ğ‚µ‚Ü‚µ‚½" +
-                    "\n ‚¨‚¢‚µ‚©‚Á‚½‚Å‚·B@‘Ì—Í{‚P‚T@¸_—Í{‚P‚O@‹à@[‚P‚O‚O‚O‰~");
+                    "\n ‚¨‚¢‚µ‚©‚Á‚½‚Å‚·B@‘Ì—Í{‚P‚T@¸_—Í{‚P‚O@‹à[‚P‚O‚O‚O‰~");
                 break;
             default:
                 Debug.Log("ƒoƒO‚Á‚Ä‚¢‚Ü‚·B‘‹}‚É’¼‚µ‚Ä‚­‚¾‚³‚¢");
@@ -194,7 +194,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("•’Ê‚É–°‚ê‚Ü‚µ‚½");
                 */
                 Messege.text = ("•’Ê‚ÉQ‚é‚±‚Æ‚ª‚Å‚«‚Ü‚µ‚½" +
-                    "\n ƒXƒbƒLƒŠ‚µ‚Ü‚µ‚½B@‘Ì—Í{‚P‚T@¸_—Í{‚P‚O@‹à");
+                    "\n ƒXƒbƒLƒŠ‚µ‚Ü‚µ‚½B@‘Ì—Í{‚P‚T@¸_—Í{‚P‚O");
 
                 break;
             case 3:
@@ -264,7 +264,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("‰“‚­‚Ì’´—L–¼…‘°ŠÙ‚És‚«‚Ü‚µ‚½");
                 */
                 Messege.text = ("‰“‚­‚Ì’´—L–¼…‘°ŠÙ‚És‚«‚Ü‚µ‚½B" +
-                    "\n ãY—í‚ÅŠ´“®‚µ‚Ü‚µ‚½B@¸_—Í{‚T‚O@‹à@[‚P‚T‚O‚O‚O‰~");
+                    "\n ãY—í‚ÅŠ´“®‚µ‚Ü‚µ‚½B@¸_—Í{‚T‚O@‹à[‚P‚T‚O‚O‚O‰~");
 
                 break;
             case 2:
@@ -274,7 +274,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("‹ßê‚Ì—L–¼…‘°ŠÙ‚És‚«‚Ü‚µ‚½");
                 */
                 Messege.text = ("‹ßê‚Ì—L–¼‚È…‘°ŠÙ‚És‚«‚Ü‚µ‚½B" +
-                    "\n ãY—í‚Å‚µ‚½B@¸_—Í{‚R‚O@‹à@[‚P‚O‚O‚O‚O‰~");
+                    "\n ãY—í‚Å‚µ‚½B@¸_—Í{‚R‚O@‹à[‚P‚O‚O‚O‚O‰~");
 
                 break;
             case 3:
@@ -284,7 +284,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("‚È‚ñ‚Æ‚È‚­…‘°ŠÙ‚És‚«‚Ü‚µ‚½");
                 */
                 Messege.text = ("‚È‚ñ‚Æ‚È‚­…‘°ŠÙ‚És‚«‚Ü‚µ‚½B" +
-                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B¸_—Í{‚P‚T@‹à@[‚T‚O‚O‚O‰~");
+                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B¸_—Í{‚P‚T@‹à[‚T‚O‚O‚O‰~");
 
                 break;
             default:
@@ -304,7 +304,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("’´”š”ƒ‚¢‚µ‚Ü‚µ‚½");
                 */
                 Messege.text = ("‚‹‰‚¨‰Ùq‚ğ’´”š”ƒ‚¢‚ğ‚µ‚Ü‚µ‚½B" +
-                    "\n –‘«‚µ‚Ü‚µ‚½B—Ï—’l{‚T‚O@‹à@[‚T‚O‚O‚O‚O‰~");
+                    "\n –‘«‚µ‚Ü‚µ‚½B—Ï—’l{‚T‚O@‹à[‚T‚O‚O‚O‚O‰~");
 
                 break;
             case 2:
@@ -314,7 +314,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("”š”ƒ‚¢‚µ‚Ü‚µ‚½");
                 */
                 Messege.text = ("‚¨‰Ùq‚ğ”š”ƒ‚¢‚µ‚Ü‚µ‚½" +
-                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B—Ï—’l{‚R‚O@‹à@[‚R‚O‚O‚O‚O‰~");
+                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B—Ï—’l{‚R‚O@‹à[‚R‚O‚O‚O‚O‰~");
 
                 break;
             case 3:
@@ -324,7 +324,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("”ƒ‚¢•¨‚ğ‚µ‚Ü‚µ‚½");
                 */
                 Messege.text = ("‘Ê‰Ùq‚ğ”š”ƒ‚¢‚µ‚Ü‚µ‚½" +
-                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B—Ï—’l{‚P‚T@‹à@[‚P‚O‚O‚O‚O‰~");
+                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B—Ï—’l{‚P‚T@‹à[‚P‚O‚O‚O‚O‰~");
 
                 break;
             default:
@@ -344,7 +344,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("ƒpƒ`ƒ“ƒR‚Å‘åŸ‚¿‚µ‚Ü‚µ‚½");
                 */
                 Messege.text = ("‚Æ‚ ‚é‰ÈŠw‚Ì’´“d¥–C‚Ìƒpƒ`ƒ“ƒR‚Å‘åŸ‚¿‚µ‚Ü‚µ‚½" +
-                    "\n ‚Æ‚Ä‚àŠy‚µ‚©‚Á‚½‚Å‚·B’†“Å’l{‚P‚T@‹à@{‚W‚O‚O‚O‚O‰~");
+                    "\n ‚Æ‚Ä‚àŠy‚µ‚©‚Á‚½‚Å‚·B’†“Å’l{‚P‚T@‹à{‚W‚O‚O‚O‚O‰~");
                 break;
 
             case 2://Ÿ‚¿
@@ -354,7 +354,7 @@ public class DialogueManejer : MonoBehaviour
                 Debug.Log("ƒpƒ`ƒ“ƒR‚ÅŸ‚¿‚µ‚Ü‚µ‚½");
                 */
                 Messege.text = ("ƒKƒ“ƒ_ƒ€‚t‚b‚ÅŸ‚¿‚Ü‚µ‚½" +
-                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B’†“Å’l{‚P‚O@‹à@{‚S‚O‚O‚O‚O‰~");
+                    "\n Š¬”\o—ˆ‚Ü‚µ‚½B’†“Å’l{‚P‚O@‹à{‚S‚O‚O‚O‚O‰~");
 
                 break;
 
@@ -363,21 +363,28 @@ public class DialogueManejer : MonoBehaviour
                 PlayerState.Addiction += 3;
                 Debug.Log("ƒpƒ`ƒ“ƒR‚Åƒgƒ“ƒgƒ“‚Å‚µ‚½");
                 */
+                Messege.text = ("µ‚Â‚Ì‘åß‚Q‚Åƒgƒ“ƒgƒ“‚Å‚µ‚½" +
+                    "\n ‚Ü‚½Ÿ•‰‚µ‚Ü‚·B’†“Å’l{‚P‚O");
+
                 break;
             case 4://•‰‚¯
-                /*
-                PlayerState.Addiction += 2;
-                PlayerState.Money -= 40000;
-                Debug.Log("ƒpƒ`ƒ“ƒR‚Å•‰‚¯‚Ü‚µ‚½");
-                */
+                   /*
+                   PlayerState.Addiction += 2;
+                   PlayerState.Money -= 40000;
+                   Debug.Log("ƒpƒ`ƒ“ƒR‚Å•‰‚¯‚Ü‚µ‚½");
+                   */
+                Messege.text = ("‹S‚ª‚©‚èƒŠƒ[ƒ‚Å•‰‚¯‚Ü‚µ‚½" +
+                    "\n B‰÷‚µ‚©‚Á‚½‚Ì‚ÅƒŠƒxƒ“ƒW‚µ‚Ü‚·B’†“Å’l{2@‹à[‚S‚O‚O‚O‚O‰~");
+
                 break;
             case 5://‘å•‰‚¯
-                /*
-                PlayerState.Addiction += 1;
-                PlayerState.Money -= 80000;
-                Debug.Log("ƒpƒ`ƒ“ƒR‚Å‘å•‰‚¯‚Ü‚µ‚½");
-                */
-
+                   /*
+                   PlayerState.Addiction += 1;
+                   PlayerState.Money -= 80000;
+                   Debug.Log("ƒpƒ`ƒ“ƒR‚Å‘å•‰‚¯‚Ü‚µ‚½");
+                   */
+                Messege.text = ("‘åH‚ÌŒ´‚³‚ñ‚Å‘å•‰‚µ‚Ü‚µ‚½B" +
+                    "\n “ñ“x‚Æ‚¤‚¿‚Ü‚¹‚ñB’†“Å’l{‚P@‹à[‚W‚O‚O‚O‚O‰~");
                 break;
 
 
@@ -386,37 +393,394 @@ public class DialogueManejer : MonoBehaviour
 
     void BortraceMessege()
     {
-        Messege.text = ("‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤");
+        switch (PlayerState.Luck)
+        {
+            case 1://‘åŸ
+                /*
+                PlayerState.Addiction += 10;
+                PlayerState.Money += 100000;
+                */
+                Messege.text = ("‘åŒŠ‚É‚©‚¯‚ÄŒ©–“–‚½‚è‚Ü‚µ‚½" +
+                    "\n ”’”M‚µ‚½‡‚Å‚µ‚½B’†“Å’l{‚P‚O@‹à{‚P‚O‚O‚O‚O‚O‰~");
+                break;
+
+            case 2://Ÿ‚¿
+                /*
+                    PlayerState.Addiction += 5;
+                    PlayerState.Money += 30000;
+                */
+                Messege.text = ("l‹C‚Ì‚à‚Ì‚É‚©‚¯‚ÄŸ‚¿‚Ü‚µ‚½" +
+                    "\n@Šy‚µ‚©‚Á‚½‚Å‚·B’†“Å’l{‚T@‹à{‚R‚O‚O‚O‚O‰~");
+
+                break;
+
+            case 3://ƒgƒ“ƒgƒ“
+                /*
+                    PlayerState.Addiction += 3;
+                */
+                Messege.text = ("l‹C‡‚É‚È‚è‚Ü‚µ‚½B" +
+                    "\n ‚Ü‚½¡“x—ˆ‚æ‚¤...B’†“Å’l{‚R");
+
+                break;
+            case 4://•‰‚¯
+                   /*
+                    PlayerState.Addiction += 2;
+                    PlayerState.Money -= 50000;
+                   */
+                Messege.text = ("l‹C‡‚ª‚¿‚å‚Á‚Æ‚¸‚ê‚Ü‚µ‚½B" +
+                    "\n @‚Ü‚½¡“xA‘åŒŠ‚É‚©‚¯‚Ü‚·B’†“Å’l{2@‹à[‚T‚O‚O‚O‚O‰~");
+
+                break;
+            case 5://‘å•‰‚¯
+                   /*
+                   PlayerState.Addiction += 1;
+                   PlayerState.Money -= 100000;
+                   */
+                Messege.text = ("‚©‚¯‚Ä‚È‚¢‘åŒŠ‡‚É‚È‚è‚Ü‚µ‚½B" +
+                    "\n ‚©‚¯‚Ä‚¢‚½‚à‚Ì‘S•”‚ª–³‘Ê‚É‚È‚è‚Ü‚µ‚½B’†“Å’l{‚P@‹à[‚P‚O‚O‚O‚O‚O‰~");
+                break;
+
+
+        }
     }
 
     void BicycleraceMessege()
     {
-        Messege.text = ("‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤");
+        switch (PlayerState.Luck)
+        {
+            case 1://‘åŸ
+                /*
+                 * 
+                 * 
+                 * 
+                */
+                Messege.text = ("‘åŒŠ‚É‚©‚¯‚ÄŒ©–“–‚½‚è‚Ü‚µ‚½" +
+                    "\n ”’”M‚µ‚½‡‚Å‚µ‚½B’†“Å’l{‚P‚O@‹à{‚P‚O‚O‚O‚O‚O‰~");
+                break;
+
+            case 2://Ÿ‚¿
+                /*
+                 *
+                 * 
+                */
+                Messege.text = ("l‹C‚Ì‚à‚Ì‚É‚©‚¯‚ÄŸ‚¿‚Ü‚µ‚½" +
+                    "\n@Šy‚µ‚©‚Á‚½‚Å‚·B’†“Å’l{‚T@‹à{‚T‚O‚O‚O‚O‰~");
+
+                break;
+
+            case 3://ƒgƒ“ƒgƒ“
+                /*
+                   @
+                */
+                Messege.text = ("l‹C‡‚É‚È‚è‚Ü‚µ‚½B" +
+                    "\n ‚Ü‚½¡“x—ˆ‚æ‚¤...B’†“Å’l{‚R");
+
+                break;
+            case 4://•‰‚¯
+                   /*
+                    
+                   */
+                Messege.text = ("l‹C‡‚ª‚¿‚å‚Á‚Æ‚¸‚ê‚Ü‚µ‚½B" +
+                    "\n @‚Ü‚½¡“xA‘åŒŠ‚É‚©‚¯‚Ü‚·B’†“Å’l{2@‹à[‚W‚O‚O‚O‚O‰~");
+
+                break;
+            case 5://‘å•‰‚¯
+                   /*
+                   
+
+                   */
+                Messege.text = ("‚©‚¯‚Ä‚È‚¢‘åŒŠ‡‚É‚È‚è‚Ü‚µ‚½B" +
+                    "\n ‚©‚¯‚Ä‚¢‚½‚à‚Ì‘S•”‚ª–³‘Ê‚É‚È‚è‚Ü‚µ‚½B’†“Å’l{‚P@‹à[‚P‚T‚O‚O‚O‚O‰~");
+                break;
+
+
+        }
     }
 
     void HorseraceMessege()
     {
-        Messege.text = ("‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤");
+        switch (PlayerState.Luck)
+        {
+            case 1://‘åŸ
+                /*
+                PlayerState.Addiction += 10;
+                PlayerState.Money += 500000;
+                */
+                Messege.text = ("‚©‚¯‚Ä‚¢‚½‘åŒŠ‚ªŒ©–“–‚½‚è‚Ü‚µ‚½B" +
+                    "\n ‘åŸ‚µ‚Ü‚µ‚½B’†“Å’l{‚P‚O@‹à[‚T‚O‚O‚O‚O‚O‰~");
+                break;
+
+            case 2://ƒgƒ“ƒgƒ“
+                /*
+                PlayerState.Addiction += 5;
+                */
+                Messege.text = ("l‹C‡’Ê‚è‚É‚È‚è‚Ü‚µ‚½" +
+                    "\n ‚¨‹à‚Í‚©‚¯‚½‹àŠz‹A‚Á‚Ä‚«‚Ü‚µ‚½B’†“Å’l{‚T");
+                break;
+
+            case 3://•‰‚¯
+                /*
+                PlayerState.Addiction += 3;
+                PlayerState.Money -= 50000;
+                */
+                Messege.text = ("l‹C‡‚ª‚¿‚å‚Á‚Æ‚©‚í‚è‚Ü‚µ‚½B" +
+                    "\n ­‚µ‚©‚¯‚Ä‚¢‚½‚Ì‚Å‘¹‚ğ‚µ‚Ü‚µ‚½B’†“Å’l{‚R@‹à[‚T‚O‚O‚O‚O‰~");
+                break;
+            case 4://‘å•‰‚¯
+                /*
+                PlayerState.Addiction += 2;
+                PlayerState.Money -= 100000;
+                */
+
+                Messege.text = ("‡ˆÊ‚ªr‚ê‚Ä‘åŒŠ‚ÈŒ‹‰Ê‚Æ‚È‚è‚Ü‚µ‚½B" +
+                    "\n ‚©‚¯‚Ä‚¢‚½‚à‚Ì‚ª–³‘Ê‚É‚È‚è‚Ü‚µ‚½B’†“Å’l{‚Q@‹à[‚P‚O‚O‚O‚O‚O‰~");
+                break;
+            case 5://’´•‰‚¯
+                /*
+                PlayerState.Addiction += 1;
+                PlayerState.Money -= 200000;
+                */
+
+                Messege.text = ("‡ˆÊ‚ªr‚ê‚Ér‚êA‚©‚¯‚Ä‚È‚¢‘åŒŠ‡‚É‚È‚è‚Ü‚µ‚½B" +
+                    "\n ‚©‚¯‚Ä‚¢‚½‚à‚Ì‘S•”‚ª–³‘Ê‚É‚È‚è‚Ü‚µ‚½B’†“Å’l{‚P@‹à[‚Q‚O‚O‚O‚O‚O‰~");
+                break;
+
+
+        }
+
     }
 
     void LotteryMessege()
     {
-        Messege.text = ("‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤");
+        switch (PlayerState.Luck)
+        {
+            case 1://Ÿ‚¿
+                /*
+                PlayerState.Addiction += 100;
+                PlayerState.Money += 100000000;
+                */
+                Messege.text = ("•ó‚­‚¶‚P“™‚ªŒ©–“–‘I‚µ‚Ü‚µ‚½" +
+                    "\n l¶—V‚ñ‚Å•é‚ç‚¹‚é‚æ‚¤‚É‚È‚è‚Ü‚µ‚½B’†“Å’l{‚P‚O‚O@‹à{‚P‚O‚O‚O‚O‚O‚O‚O‚O‰~");
+                break;
+
+            case 2://•‰‚¯
+                /*
+                PlayerState.Addiction += 5;
+                PlayerState.Money -= 50000;
+                */
+                Messege.text = ("•¡”“–‘I‚µ‚½‚½‚ßAŠy‚µ‚ß‚Ü‚µ‚½B" +
+                    "\n ‚¿‚å‚Á‚Æ‘¹‚ğ‚µ‚Ü‚µ‚½B’†“Å’l{‚T@‹à[‚T‚O‚O‚O‚O‰~");
+                break;
+
+            case 3://•‰‚¯
+                /*
+                PlayerState.Addiction += 10;
+                PlayerState.Money -= 100000;
+                */
+                Messege.text = ("“–‘I”‚ª­‚È‚©‚Á‚½‚Å‚·B" +
+                    "\n Œ‹\A‘¹‚ğ‚µ‚Ü‚µ‚½B’†“Å’l{‚P‚O@‹à[‚P‚O‚O‚O‚O‚O‰~");
+                break;
+            case 4://‘å•‰‚¯
+                /*
+                PlayerState.Addiction += 20;
+                PlayerState.Money -= 500000;
+                */
+                Messege.text = ("•ó‚­‚¶‚ğ”ƒ‚¢‚İ‚·‚¬‚Ü‚µ‚½B" +
+                    "\n ‚ß‚¿‚á‚­‚¿‚á•‰‚¯‚Ü‚µ‚½B’†“Å’l{‚Q‚O@‹à[‚T‚O‚O‚O‚O‚O‰~");
+                break;
+            case 5://’´‘å•‰‚¯
+                /*
+                PlayerState.Addiction += 30;
+                PlayerState.Money -= 1000000;
+                */
+                Messege.text = ("‚P‚O‚O–œ‰~•ª”ƒ‚Á‚½‚ª“–‚½‚è‚Ü‚¹‚ñ‚Å‚µ‚½B" +
+                    "\n ‹ƒ‚¢‚½GGB’†“Å’l{‚R‚O@‹à[‚P‚O‚O‚O‚O‚O‚O‰~");
+
+                break;
+
+        }
     }
 
     void PettycrimeMessege()
     {
-        Messege.text = ("‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤");
+        switch (PlayerState.Luck)
+        {
+            case 1://¬Œ÷
+                /*
+                PlayerState.Ethic -= 5;
+
+                PlayerState.Physical += 10;
+
+                PlayerState.Mind += 10;
+
+                PlayerState.Money += 10000;
+                */
+                Messege.text = ("–œˆø‚«‚É¬Œ÷‚µ‚Ü‚µ‚½B" +
+                    "\n –œˆø‚«‚µ‚½¤•i‚Å‚¨• ‚ğ–c‚ç‚Ü‚¹A“]”„‚µ‚Ä‚¨‹à‚ğ–×‚¯‚Ü‚µ‚½B" +
+                    "\n —Ï—’l[‚T@‘Ì—Í{‚P‚O@¸_—Í{‚P‚O@‹à{‚P‚O‚O‚O‚O‰~");
+
+                break;
+
+            case 2://–¢‹
+                /*
+                PlayerState.Ethic -= 3;
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("–œˆø‚«‚ğ‚µ‚æ‚¤v‚¢‚Ü‚µ‚½‚ª‚â‚ß‚Ü‚µ‚½B" +
+                    "\n ƒJƒƒ‰‚ÌˆÊ’u‚ªâ–­‚¾‚Á‚½‚©‚ç‚Å‚·B" +
+                    "\n —Ï—’l[‚R");
+
+                break;
+
+            case 3://¸”s
+                /*
+                PlayerState.EndingNum = 5;
+
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("–œˆø‚«‚É¸”s‚µ‚Ü‚µ‚½B" +
+                    "\n ’Ê‚è‚·‚ª‚è‚ÌŒx@‚É•ß‚Ü‚è‚Ü‚µ‚½B");
+
+                break;
+
+
+        }
     }
 
     void MediumcrimeMessege()
     {
-        Messege.text = ("‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤");
+        switch (PlayerState.Luck)
+        {
+            case 1://¬Œ÷
+                   /*
+                   PlayerState.Ethic -= 10;
+
+                   PlayerState.Money += 100000;
+
+                   SceneManager.LoadScene("ResultScene");
+                   */
+                Messege.text = ("ƒŒƒW‹­“‚É¬Œ÷‚µ‚Ü‚µ‚½B" +
+                     "\n ‚¿‚å‚Á‚Æ‚µ‚½‘å‹à‚ğ“¾‚ç‚ê‚Ü‚µ‚½B" +
+                     "\n —Ï—’l[‚P‚O@‹à‚P‚O‚O‚O‚O‚O‰~");
+
+                break;
+
+            case 2://–¢‹
+                /*
+                PlayerState.Ethic -= 5;
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("Œˆs‚µ‚æ‚¤‚Æ‚µ‚½‚ÉŒx@‚ª‚¢‚Ü‚µ‚½B" +
+                    "\n ¡‰ñ‚ÍŒ©‘—‚è‚Ü‚µ‚½B@—Ï—’l[‚T");
+
+                break;
+
+            case 3://–¢‹
+                /*
+                PlayerState.Ethic -= 5;
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("ŠÄ‹ƒJƒƒ‰‚ª‘‘å‚³‚ê‚Ä‚¨‚èAìí’Ê‚è‚És‚«‚Ü‚¹‚ñ‚Å‚µ‚½B" +
+                    "\n ¡‰ñ‚ÍŒ©‘—‚è‚Ü‚µ‚½B—Ï—’l[‚T");
+
+                break;
+
+            case 4://¸”s
+                   /*
+                   PlayerState.EndingNum = 5;
+
+                   SceneManager.LoadScene("ResultScene");
+                   */
+                Messege.text = ("e‚ÌˆÀ‘SƒƒbƒN‚ğŠO‚µ–Y‚ê‚Ü‚µ‚½B" +
+                             "\n •ß‚Ü‚è‚Ü‚µ‚½B");
+                break;
+
+            case 5://¸”s
+                /*
+                PlayerState.EndingNum = 5;
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("“¦‘–“r’†‚Éƒpƒ“ƒN‚µ‚Ü‚µ‚½B" +
+                    @@@@ "\n •ß‚Ü‚è‚Ü‚µ‚½B");
+                break;
+                
+        }
     }
 
     void HevycrimeMessege()
     {
-        Messege.text = ("‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤‚¤");
+        switch (PlayerState.Luck)
+        {
+            case 1://¬Œ÷
+                /*
+                PlayerState.Ethic -= 30;
+
+                PlayerState.Money += 1000000;
+
+                Debug.Log("¬Œ÷‚µ‚Ü‚µ‚½");
+
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("ƒ^[ƒQƒbƒg‚Ìn––‚É¬Œ÷‚µ‚Ü‚µ‚½B" +
+                     "\n Œ_–ñ‹à‚ğ“¾‚ç‚ê‚Ü‚µ‚½B" +
+                     "\n —Ï—’l[‚R‚O@‹à‚P‚O‚O‚O‚O‚O‚O‰~");
+                break;
+
+            case 2://–¢‹
+                /*
+                PlayerState.Ethic -= 10;
+
+                Debug.Log("–¢‹‚ÉI‚í‚è‚Ü‚µ‚½");
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("ƒ^[ƒQƒbƒg‚ªŒ»‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B" +
+                   @@@@  "\n ¡‰ñ‚ÍŒ©‘—‚è‚Ü‚µ‚½B@—Ï—’l[‚P‚O");
+
+                break;
+
+            case 3://¸”s
+                /*
+                PlayerState.EndingNum = 5;
+
+                Debug.Log("¸”s‚µ‚Ü‚µ‚½");
+
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("ƒ^[ƒQƒbƒg‚É•Ô‚è“¢‚¿‚É‚³‚ê‚Ü‚µ‚½B" +
+                    @@@@ "\n •ß‚Ü‚è‚Ü‚µ‚½B");
+
+                break;
+
+            case 4://¸”s
+                /*
+                PlayerState.EndingNum = 5;
+
+                Debug.Log("¸”s‚µ‚Ü‚µ‚½‚Q");
+                Debug.Log(PlayerState.EndingNum);
+
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("‘_‚Á‚Ä‚¢‚é‚Ì‚ªƒoƒŒ‚Ä‚¢‚Ü‚µ‚½B" +
+                             "\n •ß‚Ü‚è‚Ü‚µ‚½");
+
+
+                break;
+
+            case 5://¸”s
+                /*
+                PlayerState.EndingNum = 5;
+
+                Debug.Log("¸”s‚µ‚Ü‚µ‚½‚R");
+                Debug.Log(PlayerState.EndingNum);
+
+                SceneManager.LoadScene("ResultScene");
+                */
+                Messege.text = ("n––‚µ‚½‚ÉŒx@‚ÉŒ©‚ç‚ê‚Ä‚¢‚Ü‚µ‚½B" +
+                   @@@@  "\n •ß‚Ü‚è‚Ü‚µ‚½B");
+
+                break;
+
+        }
     }
 
 
