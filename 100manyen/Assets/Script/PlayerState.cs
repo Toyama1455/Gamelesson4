@@ -7,9 +7,13 @@ public class PlayerState : MonoBehaviour
     //’l‚ÌŠÇ—
     [field: SerializeField]
     public static int Physical { get; set; }//‘Ì—Í
-    
+
+    public static int PhysicalMax { get; set; }//‘Ì—Í‚ÌãŒÀ
+
     [field: SerializeField]
     public static int Mind { get; set; }//¸_—Í
+
+    public static int MindMax { get; set; }
 
     [field: SerializeField]
     public static int Addiction { get; set; }//’†“Å’l
@@ -33,6 +37,35 @@ public class PlayerState : MonoBehaviour
 
     [field: SerializeField]
     public static int Luck { get; set; }//ŠÔ
+
+    public static void addPhysical(int value)
+    {
+        Physical += value;
+
+        if (Physical > 100)
+        {
+
+            Physical = 100;
+
+        }
+        
+    }
+
+    public static void addMind(int value)
+    {
+        Mind += value;
+
+        if (Mind  > 100)
+        {
+
+            Mind = 100;
+
+        }
+
+    }
+
+
+
 
 
 

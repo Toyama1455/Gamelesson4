@@ -109,17 +109,17 @@ public class DialogueManejer : MonoBehaviour
                 
                 break;
 
-            case int i when i <= 30000:
+            case int i when i <= 20000:
                 Messege.text = ("‚¿‚å‚Á‚ÆƒTƒ{‚Á‚Ä" + PlayerState.WorkMoney + "‰~‚µ‚©‰Ò‚°‚Ü‚¹‚ñ‚Å‚µ‚½B" +
                     "\n ”æ‚ê‚Ü‚µ‚½B@‘Ì—Í[‚P‚O ¸_—Í[‚P‚O‚µ‚Ü‚µ‚½B");
                 break;
 
-            case int i when i <= 40000:
+            case int i when i <= 30000:
                 Messege.text = ("^–Ê–Ú‚É“­‚¢‚Ä" + PlayerState.WorkMoney + "‰~‚à‰Ò‚°‚Ü‚µ‚½" +
                     "\n ”æ‚ê‚Ü‚µ‚½B@‘Ì—Í[‚P‚O ¸_—Í[‚P‚O‚µ‚Ü‚µ‚½B");
                 break;
 
-            case int i when i <= 50000:
+            case int i when i <= 40000:
                 Messege.text = ("’´Šæ’£‚Á‚Ä“­‚¢‚Ä" + PlayerState.WorkMoney + "‰~‚µ‚©‰Ò‚°‚Ü‚µ‚½" +
                     "\n ”æ‚ê‚Ü‚µ‚½B@‘Ì—Í[‚P‚O ¸_—Í[‚P‚O‚µ‚Ü‚µ‚½B");
                 break;

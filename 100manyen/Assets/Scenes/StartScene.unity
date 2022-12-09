@@ -904,8 +904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385e50816f49e3a4ba07bcd280aa0590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  physical: 100
-  mind: 100
+  physical: 50
+  mind: 50
   addiction: 0
   ethic: 50
   money: 10000

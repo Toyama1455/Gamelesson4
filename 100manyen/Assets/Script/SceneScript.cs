@@ -116,6 +116,12 @@ public class SceneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
+
+
+
         
     }
 
@@ -223,6 +229,14 @@ public class SceneScript : MonoBehaviour
 
     public void OnClickEnding()
     {
+        PlayerState.EndingNum = 0;
+        PlayerState.Physical = physical;
+        PlayerState.Mind = mind;
+        PlayerState.Addiction = addiction;
+        PlayerState.Ethic = ethic;
+        PlayerState.Money = money;
+        PlayerState.day = 0;
+        PlayerState.time = 0;
         SceneManager.LoadScene("StartScene");
     }
     
@@ -233,11 +247,15 @@ public class SceneScript : MonoBehaviour
         Action = ActionBackgroundState.Work;
         //ステータス変更
 
-        PlayerState.Physical -= 10; //体力の変更
+        //PlayerState.Physical -= 10; //体力の変更
 
-        PlayerState.Mind -= 10; //精神力の変更
+        PlayerState.addPhysical(-10);
 
-        int rnd = Random.Range(1, 51);
+        //PlayerState.Mind -= 10; //精神力の変更
+
+        PlayerState.addMind(-10);
+
+        int rnd = Random.Range(1,51);
 
         
 
@@ -260,21 +278,35 @@ public class SceneScript : MonoBehaviour
         switch (PlayerState.Luck)
         {
             case 1:
-                PlayerState.Physical += 50; //体力の変更
-                PlayerState.Mind += 50; //精神力の変更
+                //PlayerState.Physical += 50; //体力の変更
+                //PlayerState.Mind += 50; //精神力の変更
+
+                PlayerState.addPhysical(30);
+                PlayerState.addMind(30);
+
                 PlayerState.Money -= 15000;//お金の変更
                 Debug.Log("高級な食事をしました。");
                 break;
 
             case 2:
-                PlayerState.Physical += 30; //体力の変更
-                PlayerState.Mind += 20; //精神力の変更
+
+                //PlayerState.Physical += 30; //体力の変更
+                //PlayerState.Mind += 20; //精神力の変更
+
+                PlayerState.addPhysical(20);
+                PlayerState.addMind(15);
+
                 PlayerState.Money -= 3000;//お金の変更
                 Debug.Log("普通の食事をしました。");
                 break;
             case 3:
-                PlayerState.Physical += 15; //体力の変更
-                PlayerState.Mind += 10; //精神力の変更
+
+                //PlayerState.Physical += 15; //体力の変更
+                //PlayerState.Mind += 10; //精神力の変更
+
+                PlayerState.addPhysical(10);
+                PlayerState.addMind(5);
+
                 PlayerState.Money -= 1000;//お金の変更
                 Debug.Log("節約的な食事をしました。");
                 break;                
@@ -294,18 +326,33 @@ public class SceneScript : MonoBehaviour
         switch (PlayerState.Luck)
         {
             case 1:
-                PlayerState.Physical += 20; //体力の変更
-                PlayerState.Mind += 30; //精神力の変更
+
+                //PlayerState.Physical += 20; //体力の変更
+                //PlayerState.Mind += 30; //精神力の変更
+
+                PlayerState.addPhysical(20);
+                PlayerState.addMind(30);
+
                 Debug.Log("熟睡できました。");
                 break;
             case 2:
-                PlayerState.Physical += 10; //体力の変更
-                PlayerState.Mind += 15; //精神力の変更                
+
+                //PlayerState.Physical += 10; //体力の変更
+                //PlayerState.Mind += 15; //精神力の変更                
+
+                PlayerState.addPhysical(10);
+                PlayerState.addMind(15);
+
                 Debug.Log("普通に眠れました");
                 break;
             case 3:
+
                 PlayerState.Physical += 5; //体力の変更
                 PlayerState.Mind += 10; //精神力の変更
+
+                PlayerState.addPhysical(5);
+                PlayerState.addMind(10);
+
                 Debug.Log("あまり眠れませんでした");
                 break;
             default:
@@ -325,18 +372,33 @@ public class SceneScript : MonoBehaviour
         switch (PlayerState.Luck)
         {
             case 1:
-                PlayerState.Physical -= 15; //体力の変更
-                PlayerState.Mind += 30; //精神力の変更
+
+                //PlayerState.Physical -= 15; //体力の変更
+                //PlayerState.Mind += 30; //精神力の変更
+
+                PlayerState.addPhysical(-15);
+                PlayerState.addMind(30);
+
                 Debug.Log("遠くの綺麗な公園にいきました");
                 break;
             case 2:
-                PlayerState.Physical -= 10; //体力の変更
-                PlayerState.Mind += 20; //精神力の変更                
+
+                //PlayerState.Physical -= 10; //体力の変更
+                //PlayerState.Mind += 20; //精神力の変更                
+
+                PlayerState.addPhysical(-10);
+                PlayerState.addMind(20);
+
                 Debug.Log("近場の綺麗な公園にいきました");
                 break;
             case 3:
+
                 PlayerState.Physical -= 5; //体力の変更
                 PlayerState.Mind += 10; //精神力の変更
+
+                PlayerState.addPhysical(-5);
+                PlayerState.addMind(10);
+
                 Debug.Log("そのへんを散歩しました");
                 break;
             default:
@@ -355,18 +417,30 @@ public class SceneScript : MonoBehaviour
         switch (PlayerState.Luck)
         {
             case 1:
+
                 PlayerState.Money -= 15000; //所持金から減らす
                 PlayerState.Mind += 50; //精神力の変更
+
+                PlayerState.addMind(50);
+
                 Debug.Log("遠くの超有名水族館に行きました");
                 break;
             case 2:
+
                 PlayerState.Money -= 10000; //所持金から減らす
                 PlayerState.Mind += 30; //精神力の変更
+
+                PlayerState.addMind(30);
+
                 Debug.Log("近場の有名水族館に行きました");
                 break;
             case 3:
-                PlayerState.Money -= 5000; //所持金から減らす
-                PlayerState.Mind += 15; //精神力の変更
+
+                //PlayerState.Money -= 5000; //所持金から減らす
+                //PlayerState.Mind += 15; //精神力の変更
+
+                PlayerState.addMind(15);
+
                 Debug.Log("なんとなく水族館に行きました");
                 break;
             default:
@@ -622,9 +696,13 @@ public class SceneScript : MonoBehaviour
 
                 PlayerState.Ethic -= 5;
 
-                PlayerState.Physical += 10;
+                //PlayerState.Physical += 10;
 
-                PlayerState.Mind += 10;
+                PlayerState.addPhysical(10);
+
+                //PlayerState.Mind += 10;
+
+                PlayerState.addMind(10);
 
                 PlayerState.Money += 10000;
 
@@ -648,6 +726,7 @@ public class SceneScript : MonoBehaviour
 
 
         }
+
     }
 
     public void OnClickMidiumcrime()//倫理値を下げて、お金ちと精神力を増やす
@@ -660,7 +739,7 @@ public class SceneScript : MonoBehaviour
         {
             case 1://成功
 
-                PlayerState.Ethic -= 10;
+                PlayerState.Ethic -= 30;
 
                 PlayerState.Money += 100000;
 
@@ -670,14 +749,14 @@ public class SceneScript : MonoBehaviour
 
             case 2://未遂
 
-                PlayerState.Ethic -= 5;
+                PlayerState.Ethic -= 20;
                 SceneManager.LoadScene("ResultScene");
                 break;
 
             case 3://未遂
 
 
-                PlayerState.Ethic -= 5;
+                PlayerState.Ethic -= 15;
                 SceneManager.LoadScene("ResultScene");
                 break;
 
@@ -713,7 +792,7 @@ public class SceneScript : MonoBehaviour
         {
             case 1://成功
 
-                PlayerState.Ethic -= 30;
+                PlayerState.Ethic -= 100;
 
                 PlayerState.Money += 1000000;
 
@@ -725,7 +804,7 @@ public class SceneScript : MonoBehaviour
 
             case 2://未遂
 
-                PlayerState.Ethic -= 10;
+                PlayerState.Ethic -= 50;
 
                 Debug.Log("未遂に終わりました");
                 SceneManager.LoadScene("ResultScene");
