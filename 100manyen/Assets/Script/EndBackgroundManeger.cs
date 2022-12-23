@@ -101,6 +101,12 @@ public class EndBackgroundManeger : MonoBehaviour
                 ED11BackGround.gameObject.SetActive(true);
 
                 break;
+
+            case 12:
+                Debug.Log("ED12の背景を表示しました");
+                //ED12BackGround.gameObject.SetActive(true);
+
+                break;
             //バグ
             default:
                 Debug.Log("バグっています");

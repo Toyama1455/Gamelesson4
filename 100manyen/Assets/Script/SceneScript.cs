@@ -97,6 +97,7 @@ public class SceneScript : MonoBehaviour
         if (PlayerState.Physical < 0)
         {
             PlayerState.EndingNum = 7;
+
         }
 
         //¸_—Í‚ª‚O‚É‚È‚Á‚½‚ç
